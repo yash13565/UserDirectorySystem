@@ -1,0 +1,35 @@
+.heading{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.userCard{
+    background-color:#2b2d42;
+    padding: 20px;
+    margin: 3rem;    
+    border-radius: 5px;
+}
+.userCardTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #edf2f4;
+}
+.links{
+    text-decoration: none;
+}
+.userCardName,.userCardPosts{
+    color: black;
+}
+@media screen and (max-width:484px) {
+   .userCardTop{ 
+    flex-direction: column;
+    gap:10px
+}
+.userCardName,.userCardPosts{
+    font-size: 10px;
+}
+}

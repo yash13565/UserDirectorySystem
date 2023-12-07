@@ -1,0 +1,69 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    border: 2px solid blue;
+}
+.backButton{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.headingTitle{
+    display: flex;
+    justify-content: center;
+}
+.headingTitle h2{
+    color: #005f73;
+    border-bottom: 4px solid grey;
+}
+.userDetails{
+    background-color: #b7e4c7;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.parentContainer{
+    margin-top: 2rem;
+    display: flex;
+    max-width: 450px;
+    overflow:hidden ;
+}
+.userPosts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .postContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px;
+    margin-top: 15px;
+  }
+  @media screen and (max-width:767px) {
+    .userDetails{
+        font-size: 11px;
+    }
+  }
+  @media screen and (max-width:540px) {
+    .headingTitle h2{
+        font-size: 16px;
+    }
+    .postContainer{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .userDetails{
+        font-size: 8px;
+    }
+    .backButton{
+        padding: 5px;
+    }
+  }

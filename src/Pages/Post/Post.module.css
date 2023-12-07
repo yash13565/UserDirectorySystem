@@ -1,0 +1,15 @@
+
+.cards {
+    padding: 16px;
+    margin-bottom: 16px;
+    height: 100%; 
+    box-sizing: border-box; 
+    border-radius: 20px;
+    background-color: #006466;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .cards:hover {
+    cursor: pointer;
+    background-color: #d9d9d9;
+  }
